@@ -15,7 +15,7 @@ print(d.tail(5))
 print(d.iloc[:,0].size)
 #查看总列数
 print(d.columns.size)
-print('hello')
+
 #print(d)
 #print(d2)
 
