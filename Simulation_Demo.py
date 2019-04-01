@@ -13,8 +13,8 @@ PyCharm 在2017.3版本之后加入了Scientific Mode，在科学计算时，可
 '''
 
 S0 = 0 #初始值
-I = 6 #仿真次数
-T = 100 #时间周期
+I = 5 #仿真次数
+T = 20 #时间周期
 S = np.zeros((T + 1, I)) # T+1行 I列 矩阵
 #输出矩阵形状
 print(S.shape)
