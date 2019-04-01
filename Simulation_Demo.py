@@ -12,8 +12,6 @@ PyCharm 在2017.3版本之后加入了Scientific Mode，在科学计算时，可
 4. 勾选 Run with python console
 '''
 
-
-
 S0 = 0 #初始值
 I = 6 #仿真次数
 T = 100 #时间周期
