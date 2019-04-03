@@ -1,9 +1,20 @@
 import numpy as np
 import matplotlib.pyplot as plt
+'''
+PyCharm 在2017.3版本之后加入了Scientific Mode，在科学计算时，可以方便的追踪变量变化等。
 
-S0 = 0 #初始值
-I = 6 #仿真次数
-T = 100 #时间周期
+有时打开了scientific mode时，但文件中引入了numpy 等科学计算包时并没有被自动识别，以scientific mode运行。需要在run方法中手动设置一下。
+
+具体步骤：
+1. Settings –> Tools –> Python Scientific > Show plots in tool window 勾选
+2. View 勾选 Scientific Mode
+3. Run–>Edit configurations…
+4. 勾选 Run with python console
+'''
+
+S0 = 0  #初始值
+I = 5 #仿真次数
+T = 20 #时间周期
 S = np.zeros((T + 1, I)) # T+1行 I列 矩阵
 #输出矩阵形状
 print(S.shape)
