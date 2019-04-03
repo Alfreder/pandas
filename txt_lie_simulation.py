@@ -1,15 +1,15 @@
 #处理仿真数据
 import pandas as pd
-#l = "Production 1_1 (1 2000)"
-l = input('请输入列名：')
+l = "Production 1_1 (1 2000)"
+#l = input('请输入列名：')
 filename = "./lie/all_"+l+".txt"
 file = open(filename,'a+')
 # 写入列名
 file.write(l)
 file.write('\n')
-for i in range(1,10):
+for j in range(1,10):
     #print(i)
-    file_path = "./lie/InnEEInnXBank_"+str(i)+".res"
+    file_path = "./lie/InnEEInnXBank_"+str(j)+".res"
     #print(file_path)
     data = pd.read_table(file_path)
     columns = data.columns.values.tolist()
@@ -19,7 +19,7 @@ for i in range(1,10):
     for i in columns:
         if l in i:
             col_xian.append(i)
-    print(col_xian)
+    #print(col_xian)
     df_xian = data[col_xian]
     #print(df_xian)
 
@@ -38,4 +38,4 @@ for i in range(1,10):
         file.write(s)
     #file.write('\n')
     file.close()
-    print("保存文件成功")
+    print("保存第"+str(j)+"文件成功")
