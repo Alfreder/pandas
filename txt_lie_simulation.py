@@ -1,6 +1,7 @@
 #处理仿真数据
 import pandas as pd
-l = "Production 1_1 (1 2000)"
+#l = "Production 1_1 (1 2000)"
+l = input('请输入列名：')
 filename = "./lie/all_"+l+".txt"
 file = open(filename,'a+')
 # 写入列名
