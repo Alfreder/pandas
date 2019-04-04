@@ -46,8 +46,8 @@ def lie(txt1,lie1,txt2):
     filename = "./lie/all_"+l+".txt"
     file = open(filename,'a+')
     # 写入列名
-    file.write(l)
-    file.write('\n')
+    #file.write(l)
+    #file.write('\n')
     for j in range(0,int(txt2)):
         #print(i)
         #file_path = "./lie/InnEEInnXBank_"+str(j)+".res"
@@ -76,9 +76,10 @@ def lie(txt1,lie1,txt2):
         #写入列名下的数据
         for i in range(len(data)):
             s = str(data[i]).replace('[','').replace(']','')
-            s = s.replace("'",'').replace(',','') +'\n' #\n按列写入,\t 按行写入
+            s = s.replace("'",'').replace(',','') +'\t' #\n按列写入,\t 按行写入，一个企业在一行
             file.write(s)
-        #file.write('\n')
+        #下一个企业换行
+        file.write('\n')
         file.close()
         #print("保存第"+str(j)+"文件成功")
         #global on_hit
