@@ -1,7 +1,6 @@
 import tkinter as tk
 import pandas as pd
 
-
 window = tk.Tk()
 window.title('Simulation_lie')
 #window.geometry('200x200')
@@ -11,7 +10,6 @@ var1=tk.StringVar()
 var2=tk.StringVar()
 var3 = tk.StringVar()
 on_hit = False
-
 
 Label1 = tk.Label(window,text='txt name:').grid(row=0,column=0)
 Label2 = tk.Label(window,text='lie name:').grid(row=1,column=0)
@@ -90,8 +88,6 @@ def lie(txt1,lie1,txt2):
         hit_me(on_hit)
     on_hit = "success"
     hit_me(on_hit)
-
-
 
 def hit_me(on):
 
