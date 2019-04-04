@@ -35,7 +35,7 @@ def Start():
     try:
         lie(txt_name,lie_name,txt_count)
     except Exception as result:
-        print(result)
+        #print(result)
         on_hit = result
         hit_me(on_hit)
 
